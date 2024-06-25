@@ -1,9 +1,10 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) {
         // Scanner para leitura de dados do terminal
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
         
         // Aqui vai lê o número da conta
         System.out.println("Por favor, digite o número da Conta:");
